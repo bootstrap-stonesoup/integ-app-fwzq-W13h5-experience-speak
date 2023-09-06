@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bbes
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-fwzq/devfile-sample-python-basic-bbes@sha256:34b05772287d95df4b7e7014dd90adb1176fa1dbb53573e14aa1c4153ce270dd
+        name: my-python
+        resources: {}
+status: {}
